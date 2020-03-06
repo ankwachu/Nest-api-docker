@@ -1,6 +1,15 @@
+import { ApiProperty } from '@nestjs/swagger';
+
 export class ArticleDto {
-    readonly title: string;
-    readonly author: string;
-    readonly description: string;
-    readonly content: string;
+    @ApiProperty()
+    title: string;
+
+    @ApiProperty()
+    author: string;
+
+    @ApiProperty()
+    description: string;
+
+    @ApiProperty()
+    content: string;
 }
