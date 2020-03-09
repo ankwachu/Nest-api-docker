@@ -2,7 +2,7 @@
 
 - Back: Nestjs
 
-- Front: Angular
+- Front: Angular material
 
 - Database: mongoDB
 
@@ -28,18 +28,21 @@ Docker
 
 Docker-Compose
 [Voir la doc](https://docs.docker.com/compose/install/)
-en resume:
-
+en résumé:
+```sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-
+```
 on s'ajoute au groupe docker
-
+```sh
 sudo usermod -aG docker `whoami`
-Et pour appliquer ce changement, on redemarre la machine.
+```
+Et pour appliquer ce changement, on redémarre la machine.
 Pour verifier:
+```sh
 docker -v
 docker-compose -v
+```
 
 ### Préparation du projet
 cloner le projet
